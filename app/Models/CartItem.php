@@ -5,9 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ProductType extends Model
+class CartItem extends Model
 {
     use HasFactory;
 
-    protected $guarded = [];
+    protected $fillable = ['user_id', 'quantity', 'product_option_id'];
 }
